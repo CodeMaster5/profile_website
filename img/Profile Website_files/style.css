@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+}
+
+#logo {
+    float: left;
+    max-height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  #logo {
+    float: right;
+     max-height: 50px;
+  }
+}
+
+#heading_text {
+    float: right;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Verdana;
+    color: #2d3c49;
+}
+
+#heading_text h1 {
+    font-weight: 100;
+}
+
+#heading_text h4 {
+    font-weight: 300;
+}
+
+#divider {
+    width: 100%;
+    height: 5px;
+    background-color: #7d97ad;
+    display: block;
+    margin: 0.5em auto;
+}
+
+#main_image {
+    width: 100%;
+}
+
+#feature_text {
+    width: 100%;
+    text-align: left;
+    color: #7d97ad;
+    font-family: Verdana;
+    font-weight: 300;
+}
+
+.work {
+    height: auto;
+    color: #2d3c49;
+    display: inline-block;
+    text-align: center;
+    flex-flow: row wrap;
+    margin: 5px;
+}
+
+@media screen and (max-width: 719px) {
+  .work {
+     width: 100%;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1079px) {
+  .work {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .work {
+    width: 33%;
+  }
+
+}
+
+.work a:link {
+    text-decoration: none;
+    color: #2d3c49;
+}
+
+#footer_text {
+    width: 100%;
+    text-align: center;
+    color: #2d3c49;
+}
