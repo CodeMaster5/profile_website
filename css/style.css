@@ -1,25 +1,25 @@
 /* Sets the width of the whole header to be the 100% of the available width. */
 header {
-    width: 100%;
+  width: 100%;
 }
 
 /* Sets the logo to be left of the text and the height to be maximum of 100 pixels */
-#logo {
-    float: left;
-    max-height: 100px;
+.logo {
+  float: left;
+  max-height: 100px;
 }
 
 /* If the screen's width is smaller than 480 pixels then the height is
     50 pixels max and the logo is set to the right side of the screen. */
 @media screen and (max-width: 480px) {
-  #logo {
+  .logo {
     float: right;
      max-height: 50px;
   }
 }
 
 /* Styling the header text. */
-#heading_text {
+.heading_text {
     float: right;
     text-align: right;
     text-transform: uppercase;
@@ -28,17 +28,17 @@ header {
 }
 
 /* Sets the boldness letters of header with my name to be lighter. */
-#heading_text h1 {
+.heading_text h1 {
     font-weight: 100;
 }
 
 /* Sets the boldness letters of header with my personal message to be lighter. */
-#heading_text h4 {
+.heading_text h4 {
     font-weight: 300;
 }
 
 /* Sets up the styles for the divider. */
-#divider {
+.divider {
     width: 100%;
     height: 5px;
     background-color: #7d97ad;
@@ -47,12 +47,12 @@ header {
 }
 
 /* Sets the width of the main image to be the 100% of the available width. */
-#main_image {
+.main_image {
     width: 100%;
 }
 
 /* Styles the Featured Projects header. */
-#feature_text {
+.feature_text {
     width: 100%;
     text-align: left;
     color: #7d97ad;
@@ -61,49 +61,47 @@ header {
 }
 
 /* Styles the project cards. */
-.work {
+.col-md-4 {
     height: auto;
-    color: #2d3c49;
     display: inline-block;
+    color: #2d3c49;
     text-align: center;
-    flex-flow: row wrap;
     margin: 5px;
 }
 
-/* If the screen's width is smaller than 720 pixels then this sets the width
-    of the project cards to be the 100% of the available width. */
-@media screen and (max-width: 719px) {
-  .work {
-     width: 100%;
+/* If the screen's width is smaller than 767 pixels then this sets the width
+    of the project cards to be the 100% of the available width.*/
+@media screen and (max-width: 767px) {
+  .col-md-4 {
+    width: 100%;
   }
 }
 
-/* If the screen's width is between 720 and 1079 pixels then this sets the width
+/* If the screen's width is between 768 and 1199 pixels then this sets the width
     of the project cards to be the 45% of the available width. */
-@media screen and (min-width: 720px) and (max-width: 1079px) {
-  .work {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .col-md-4  {
     width: 45%;
   }
 }
 
-/* If the screen's width is above 1079 pixels then this sets the width
-    of the project cards to be the 32% of the available width. */
-@media screen and (min-width: 1080px) {
-  .work {
+/* If the screen's width is above 1200 pixels then this sets the width
+    of the project cards to be the 32% of the available width.*/
+@media screen and (min-width: 1200px) {
+  .col-md-4 {
     width: 32%;
   }
-
 }
 
 /* Styles the links on the project cards. */
 .work a:link {
-    text-decoration: none;
-    color: #2d3c49;
+  text-decoration: none;
+  color: #2d3c49;
 }
 
 /* Styles the footer. */
-#footer_text {
-    width: 100%;
-    text-align: center;
-    color: #2d3c49;
+.footer_text {
+  width: 100%;
+  text-align: center;
+  color: #2d3c49;
 }
