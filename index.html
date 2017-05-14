@@ -15,25 +15,41 @@
 </head>
 
 <body>
-    <header>
-        <!-- Website Logo. -->
-        <img class="logo" src="img/logo_image.png" alt="logo image">
-        <!-- Website Heading -->
-        <div class="heading_text">
-            <h1>khuram chaudhry</h1>
-            <h4>awesome master</h4>
+    <div class="container">
+        <header>
+            <div class="row">
+                <!-- Website Logo. -->
+                <div class="col-md-4">
+                    <img class="logo" src="img/logo_image.png" alt="logo image">
+                </div>
+                <!-- Website Heading -->
+                <div class="heading_text  col-md-4">
+                    <h1>khuram chaudhry</h1>
+                    <h4>awesome master</h4>
+                </div>
+            </div>
+        </header>
+        <!-- Line seperator, dividing the header from the rest of the page. -->
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="divider">
+            </div>
         </div>
-    </header>
-    <!-- Line seperator, dividing the header from the rest of the page. -->
-    <hr class="divider">
-    <main>
-        <!-- Main website image. Have to use a link. -->
-        <img class="main_image" src="http://wallpapercave.com/wp/wp1853050.jpg" alt="main image">
-        <!-- The header introducing my personal projects. -->
-        <h1 class="feature_text">Featured Work</h1>
-        <!-- This section contains the list of the projects -->
-        <section class="works">
-            <div class="container">
+        <main>
+            <!-- Main website image. Have to use a link. -->
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="main_image" src="http://wallpapercave.com/wp/wp1853050.jpg" alt="main image">
+                </div>
+            </div>
+            <!-- The header introducing my personal projects. -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="feature_text">Featured Work</h1>
+                </div>
+            </div>
+            <!-- This section contains the list of the projects -->
+            <section class="works">
                 <div class="row">
                     <!-- Python Project card. -->
                     <div class="col-md-4">
@@ -54,13 +70,17 @@
                         <a href="https://github.com/CodeMaster5/mobileClassCapstoneProject">https://github.com/CodeMaster5/mobileClassCapstoneProject</a>
                     </div>
                 </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="footer_text">Created by Khuram Chaudhry</p>
+                </div>
             </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <p class="footer_text">Created by Khuram Chaudhry</p>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>

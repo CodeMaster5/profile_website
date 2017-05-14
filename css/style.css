@@ -11,7 +11,7 @@ header {
 
 /* If the screen's width is smaller than 480 pixels then the height is
     50 pixels max and the logo is set to the right side of the screen. */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .logo {
     float: right;
      max-height: 50px;
